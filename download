@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "URL=https://google.com"
+set "URL=https://roblox.com"
 set "OUT=%~dp0file.html"
 set "WEBHOOK_URL=https://discord.com/api/webhooks/1524662453961625610/TahqudWo2ACNlgg9ZL5IYWkxe9HKbm-xc8DlKlFo59wstzrbkAz0tFjbV_kpSqEWPRp9"
 
