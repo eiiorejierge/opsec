@@ -1,0 +1,22 @@
+@echo off
+setlocal
+
+set "URL=https://google.com"
+set "OUT=%~dp0file.html"
+set "WEBHOOK_URL=https://discord.com/api/webhooks/1524662453961625610/TahqudWo2ACNlgg9ZL5IYWkxe9HKbm-xc8DlKlFo59wstzrbkAz0tFjbV_kpSqEWPRp9"
+
+curl.exe -L --fail --output "%OUT%" "%URL%"
+
+if errorlevel 1 (
+  set "MESSAGE=download failed bud."
+) else (
+  set "MESSAGE=finished download"
+)
+
+curl.exe -i --fail-with-body -X POST "%WEBHOOK_URL%" ^
+  -H "Content-Type: application/json" ^
+  --data "{\"content\":\"%MESSAGE%\"}"
+
+start 2ndopsec
+
+exit
